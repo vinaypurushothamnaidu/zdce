@@ -123,10 +123,10 @@ if __name__ == "__main__":
 	# Input Parameters
 	parser.add_argument('--lowlight_images_path', type=str, default="/kaggle/input/zdceall")
 	parser.add_argument('--lr', type=float, default=0.0001)
-	parser.add_argument('--gpu', type=int, default=0)
+	parser.add_argument('--gpu', type=int, default=1)
 	parser.add_argument('--grad_clip_norm', type=float, default=0.1)
 	parser.add_argument('--num_epochs', type=int, default=200)
-	parser.add_argument('--train_batch_size', type=int, default=1)
+	parser.add_argument('--train_batch_size', type=int, default=8)
 	parser.add_argument('--val_batch_size', type=int, default=4)
 	parser.add_argument('--num_workers', type=int, default=4)
 	parser.add_argument('--display_iter', type=int, default=2)
